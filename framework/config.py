@@ -4,8 +4,7 @@
 #####################
 #config for basic
 first_run = 1
-script_runtime_span = 2
-cmd = "whoami"
+script_runtime_span = 1
 debug = 0
 headers = {"User-Agent":"Hence Zhang"}
 run_for_flag = 0
@@ -17,7 +16,7 @@ timeout = 4
 #############################
 # config for data and log
 target_list = "data/ip.data"
-status_list = "data/status.data"
+status_list = "log/status.data"
 sys_log = "log/sys.log"
 specific_status_log = "log/spec/"
 targets_status = ''
@@ -26,18 +25,18 @@ targets_status = ''
 
 ###########################################
 # get flag
-flag_server = "192.168.4.1"
-flag_port = 80
-flag_url = "/lms/portal/sp/hz_flag.php"
-flag_token = "team1"
+flag_server = "127.0.0.1"
+flag_port = 8888
+flag_url = "/flag"
+flag_token = "GZsC5UJvATkFrZzvwEyGx7983ek7kV65SKky2BsqUMKBzNjKJ3gKcRDdZFkSkdSwzrcqQGFEGtj"
 flag_cookie = "zlms-sid=bs3h3gu7usjcvngvenm4p4cq55"
-flag_path = '/flag.txt'
+flag_path = '/flag'
 
 
 # the server you need to visit to get the flag
 get_flag_url = "http://172.16.0.30:8000/flag" 
 flag_string = 'TSCTFflagFLAGabcdef0123456789ABCDEF{}-_'
-flag_match_string = 'ok'
+flag_match_string = 'success'
 ##########################################
 
 ########################################
@@ -56,14 +55,14 @@ shell_type = 2
 #######################
 #config for web path and file path
 #The final / should not be delete!!!!!!!!
-shell_path = "/css"
-shell_absolute_path = "/var/www/html/css/"
+shell_path = "/"
+shell_absolute_path = "/var/www/html/"
 crontab_path = "/tmp/"
 web_path = '/var/www/html/'
 ######################
 
 
-######################
+#####################
 #config for reverse_shell
 reverse_ip = '192.168.2.115'
 reverse_port  =  6666
@@ -107,4 +106,11 @@ chat_label = '/server53936ce6eef01d89d066ae900e9a1de5.php'
 chat_label = '/humen.txt'
 url_label = '/shell.php'
 #####################
+
+
+########################
+# config for symbolic link backdoor
+
+ln_path = "/app"
+########################
 
